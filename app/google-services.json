@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "917734754150",
+    "firebase_url": "https://bookingtour-cfe14-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "bookingtour-cfe14",
+    "storage_bucket": "bookingtour-cfe14.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917734754150:android:435364f152cea4d9faaaa7",
+        "android_client_info": {
+          "package_name": "com.example.banvainhacuong"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbjTin4tltf29Atm33Zj8kRPa2fuVV6s0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917734754150:android:d389076ce6f59c79faaaa7",
+        "android_client_info": {
+          "package_name": "com.example.booking"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbjTin4tltf29Atm33Zj8kRPa2fuVV6s0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

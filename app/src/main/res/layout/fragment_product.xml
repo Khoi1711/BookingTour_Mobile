@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_course"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cultured"
+    tools:context=".Fragments.ProductFragment">
+
+    <TextView
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:id="@+id/foodTour"
+        android:text="Find your food"
+        android:textSize="38sp"
+        android:textColor="@color/lavender"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/foodTourIamge"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/amazonDesc"
+        android:text="Hi friends!"
+        android:textSize="15sp"
+        android:layout_marginStart="18dp"
+        android:textColor="@color/lavender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/foodTour"
+        app:layout_constraintEnd_toStartOf="@+id/foodTourIamge"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:id="@+id/foodTourIamge"
+        android:src="@drawable/ic_drink"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@id/foodTour"/>
+
+    <TextView
+        android:id="@+id/foodTour2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="List of products"
+        android:textColor="@color/lavender"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/tabLayoutProduct"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodTourIamge" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productRecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayoutProduct"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <SearchView
+        android:id="@+id/searchViewProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corners"
+        android:iconifiedByDefault="false"
+        android:inputType="textCapSentences"
+        android:queryHint="Search food..."
+        app:layout_constraintTop_toBottomOf="@+id/foodTour2"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/cultured"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchViewProduct"
+        app:tabIndicatorColor="@color/vivid_yellow"
+        app:tabSelectedTextColor="@color/vivid_yellow"
+        app:tabTextColor="@color/outer_space">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All products" />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarProduct"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/vivid_yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
